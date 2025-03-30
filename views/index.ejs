@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Post App</title>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-zinc-900">
+    <div class="bg-zinc-800 p-8 rounded-xl shadow-lg w-full max-w-md">
+        <h2 class="text-white text-2xl font-semibold text-center mb-6">Register</h2>
+
+        <form action="/register" method="post" class="flex flex-col gap-4">
+            <input type="text" placeholder="@JohnDoe" name="username" class="w-full p-3 bg-zinc-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            <input type="text" placeholder="John Doe" name="name" class="w-full p-3 bg-zinc-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            <input type="number" placeholder="45" name="age" class="w-full p-3 bg-zinc-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            <input type="email" placeholder="johndoe@gmail.com" name="email" class="w-full p-3 bg-zinc-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            <input type="password" placeholder="••••••" name="password" class="w-full p-3 bg-zinc-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            <button type="submit" name="register" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300">Register</button>
+        </form>
+
+        <!-- Link to login page -->
+        <p class="text-center text-white mt-4">
+            Already registered? <a href="/login" class="text-blue-400 hover:underline">Login here</a>
+        </p>
+    </div>
+</body>
+</html>
